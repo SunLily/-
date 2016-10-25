@@ -1,0 +1,7 @@
+com\cn\mapper\UserMapper.class
+com\cn\Pojo\User.class
+com\cn\Service\UserService.class
+com\cn\Pojo\Folder.class
+com\cn\Pojo\Photo.class
+com\cn\Service\UserServiceImpl.class
+com\cn\Dao\UserDao.class

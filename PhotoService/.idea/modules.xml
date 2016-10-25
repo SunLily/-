@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PhotoService.iml" filepath="$PROJECT_DIR$/PhotoService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PhotoWeb/PhotoWeb.iml" filepath="$PROJECT_DIR$/../PhotoWeb/PhotoWeb.iml" />
+    </modules>
+  </component>
+</project>
