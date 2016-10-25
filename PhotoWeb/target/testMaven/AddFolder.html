@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新增相册</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+ 	<script src="js/jquery.js"></script>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+   	
+</head>
+<body>
+<div class="htmleaf-container">
+    <div class="demo form-bg" style="padding: 20px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-3 col-md-6">
+
+                    <form class="form-horizontal" method="post" >
+                        <span class="heading">新增相册</span>
+                        <div class="form-group">
+                            <input type="email" name = "name" class="form-control" id="inputEmail3" placeholder="相册名称">
+                            <i class="glyphicon glyphicon-tag"></i>
+                        </div>
+						<div class="form-group">               
+                            <input class="form-control" id="upFile" onclick="upFiles.click()" placeholder="上传路径"/>
+                            <input type="file" id="upFiles" onchange="uploadFile(this)" style="visibility: hidden;position: absolute"/>                         
+                            <i class="glyphicon glyphicon-plus"></i>                            
+                        </div>
+                        <div class="form-group">
+                            <button type="button" id="submit" align="center" class="btn btn-default">确认</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+	function uploadFile(){
+		var filePath = $("#upFiles").val();
+        $("#upFile").val(filePath);
+	}
+</script>
+</body>
+</html>
